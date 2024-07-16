@@ -7,11 +7,12 @@ This repository contains the code implementation of the ECCV 2024 paper "SDPT: S
 ## Installation
 
 Since this code is built upon the GLIP framework, the installation process can refer to the [official installation guide of GLIP](https://github.com/microsoft/GLIP) .
-
+But we modified code in GLIP/maskrcnn_benchmark for our SDPT.
 Brief steps typically include:
-1. Clone the GLIP repository (if not already installed).
-2. Set up the environment according to the GLIP README, including installing necessary dependencies.
-3. Clone this repository locally and integrate it with the GLIP directory structure (if necessary).
+1. clone our repository and open it.
+2. create a python environment (we use 3.7.12)
+3. python setup.py develop        --this step will install maskrcnn_benchmark according to the ./maskrcnn_benchmark in our repository, and other standard libiaries.Then, you can modify codes in 
+ ./maskrcnn_benchmark like us, and explore further.
 
 ## Datasets
 
@@ -54,14 +55,12 @@ python train.py \
 ```
 
 Note that `vpt_only -4`, `froze_fuse 1`, and `MODEL.PROMPT.NUM_TOKENS 700` are SDPT-specific parameters, while the rest are mostly related to the original GLIP framework or runtime details, not directly tied to the SDPT algorithm.
-
+All parameters are defined in file maskrcnn_benchmark/config/defaults.py. You can find some explaination or clue about how to use the parameters there. If we did not give detail explaination about some parameter, please global search the parameter name in ./maskrcnn_benchmark for analysis.For example, global search 'froze_fuse', read the context code, and you will find this parameter froze the fuse module in GLIP.
+Some important parameter: vpt_only=-4 will add the adapter of our SDPT; MODEL.PROMPT.NUM_TOKENS controls the token length of SDPT.
+Change default dataset parameter {DATASETS.TRAIN ('coco_grounding_train',) DATASETS.TEST ('coco_val',)} to apply to ODinW or others. The datasets information should be defined in maskrcnn_benchmark/config/paths_catalog.py. Modify it after you download the datasets.
 ## Contributions and Feedback
 
 We welcome any form of contributions and feedback. If you find any issues or have suggestions for improvement, please report them through GitHub Issues or submit a Pull Request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Citation
 

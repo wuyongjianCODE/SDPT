@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code implementation of the ECCV 2024 paper "SDPT: Synchronous Dual Prompt Tuning for Fusion-based Visual-Language Pre-trained Models." The code is developed based on the GLIP framework, aiming to enhance the performance of fusion-based visual-language pre-trained models through the proposed SDPT method. The paper link is [https://](https://arxiv.org/abs/2407.11414).
+This repository contains the code implementation of the ECCV 2024 paper "SDPT: Synchronous Dual Prompt Tuning for Fusion-based Visual-Language Pre-trained Models." The code is developed based on the GLIP framework, aiming to enhance the performance of fusion-based visual-language pre-trained models through the proposed SDPT method. The paper link is [here](https://arxiv.org/abs/2407.11414).
 
 ![detailmethod](https://github.com/user-attachments/assets/19be4d3a-6565-4fb6-b365-38644da8d23f)
 

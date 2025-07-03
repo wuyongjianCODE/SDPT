@@ -72,13 +72,12 @@ We welcome any form of contributions and feedback. If you find any issues or hav
 If you use this code in your research, please cite the ECCV 2024 paper as follows:
 
 ```
-@misc{zhou2024sdptsynchronousdualprompt,
-      title={SDPT: Synchronous Dual Prompt Tuning for Fusion-based Visual-Language Pre-trained Models}, 
-      author={Yang Zhou and Yongjian Wu and Jiya Saiyin and Bingzheng Wei and Maode Lai and Eric Chang and Yan Xu},
-      year={2024},
-      eprint={2407.11414},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.11414}, 
+@inproceedings{zhou2024sdpt,
+  title={SDPT: Synchronous Dual Prompt Tuning for Fusion-Based Visual-Language Pre-trained Models},
+  author={Zhou, Yang and Wu, Yongjian and Saiyin, Jiya and Wei, Bingzheng and Lai, Maode and Chang, Eric and Xu, Yan},
+  booktitle={European Conference on Computer Vision},
+  pages={340--356},
+  year={2024},
+  organization={Springer}
 }
 ```

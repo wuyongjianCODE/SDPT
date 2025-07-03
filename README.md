@@ -54,6 +54,8 @@ python train.py \
     SOLVER.CHECKPOINT_PERIOD 100 \
     vpt_only -4 \
     froze_fuse 1 \
+    FROZEE_SWINT True \
+    FROZEE_BERT True \
     MODEL.PROMPT.NUM_TOKENS 700
 ```
 
